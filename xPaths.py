@@ -1,8 +1,8 @@
 
 class xquery:
-	x_item_1 =  "//a[@rel='noopener noreferrer'][@class='ow-button-hover sow-social-media-button-email-0 sow-social-media-button']"
-	#x_item_2 = 
-	#x_item_3 = 
+	x_item_1 =  ".//span[contains(@class, 'a-size-base-plus a-color-base a-text-normal')]"
+	x_item_2 = ".//span[@data-a-color='base']/span[@class='a-offscreen'][contains(text(), '$')]"
+	x_item_3 = './/a[@class="a-size-base a-link-normal a-text-normal"]'
 	#x_item_4 = 
 	#x_item_5 = 
 	#x_item_6 = 
@@ -22,9 +22,6 @@ class xquery:
 	#x_item_20 = 
 	#x_item_21 = 
 	#x_item_22 = 
-
-import time
-import pandas as pd
 
 source_links=[]
 array_I=[]
@@ -52,25 +49,3 @@ options.add_experimental_option("excludeSwitches",["enable-automation"])
 options.add_argument("--start-maximized")
 options.add_argument('--ignore-certificate-errors')
 driver = webdriver.Chrome(options=options, executable_path='/home/tarek/MY_PROJECTS/Selenium_Projects/webdrivers/chromedriver')
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
